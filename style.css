@@ -1,0 +1,1244 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   SISTEMA DE 17 TEMAS Y PALETAS PREMIUM (V7)
+   ========================================== */
+
+/* --- TEMAS OSCUROS --- */
+
+/* 1. Ciruela Oscura (Tema Predeterminado Luxury) */
+body, body.tema-ciruela-oscura {
+    --bg-principal: #0f0a15;
+    --bg-tarjeta: #181022;
+    --text-principal: #f8f5ff;
+    --text-secundario: #c084fc;
+    --color-primario: #fda4af;
+    --color-primario-hover: #fb7185;
+    --border-color: rgba(192, 132, 252, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(15, 10, 21, 0.45);
+    --bg-input: #0f0a15;
+    --bg-navbar: linear-gradient(135deg, #181022 0%, #0f0a15 100%);
+    --text-navbar: #f8f5ff;
+    --color-ingreso: #34d399;
+    --color-gasto: #fda4af;
+    --color-saldo-azul: #c084fc;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 2. Midnight Rose (Oscuro Soft & Rosé) */
+body.tema-midnight-rose {
+    --bg-principal: #0a0b10;
+    --bg-tarjeta: #12131a;
+    --text-principal: #fdf4f5;
+    --text-secundario: #fb7185;
+    --color-primario: #fda4af;
+    --color-primario-hover: #fecdd3;
+    --border-color: rgba(251, 113, 133, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.5);
+    --bg-input: #0a0b10;
+    --bg-navbar: linear-gradient(135deg, #12131a 0%, #0a0b10 100%);
+    --text-navbar: #fdf4f5;
+    --color-ingreso: #6ee7b7;
+    --color-gasto: #fb7185;
+    --color-saldo-azul: #fda4af;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 3. Emerald Luxury (Oscuro Esmeralda Profundo) */
+body.tema-emerald-luxury {
+    --bg-principal: #021a14;
+    --bg-tarjeta: #042b20;
+    --text-principal: #e6f4f1;
+    --text-secundario: #34d399;
+    --color-primario: #a7f3d0;
+    --color-primario-hover: #d1fae5;
+    --border-color: rgba(52, 211, 153, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.5);
+    --bg-input: #021a14;
+    --bg-navbar: linear-gradient(135deg, #042b20 0%, #021a14 100%);
+    --text-navbar: #e6f4f1;
+    --color-ingreso: #34d399;
+    --color-gasto: #fca5a5;
+    --color-saldo-azul: #6ee7b7;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 4. Oscuro Estándar (Slate Noche) */
+body.tema-oscuro {
+    --bg-principal: #0b0f19;
+    --bg-tarjeta: #152033;
+    --text-principal: #f8fafc;
+    --text-secundario: #94a3b8;
+    --color-primario: #3b82f6;
+    --color-primario-hover: #60a5fa;
+    --border-color: rgba(148, 163, 184, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.4);
+    --bg-input: #0b111e;
+    --bg-navbar: linear-gradient(135deg, #152033 0%, #0b0f19 100%);
+    --text-navbar: #f8fafc;
+    --color-ingreso: #34d399;
+    --color-gasto: #f87171;
+    --color-saldo-azul: #60a5fa;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 5. Noche Azul (Marino Nocturno) */
+body.tema-noche-azul {
+    --bg-principal: #020617;
+    --bg-tarjeta: #0f172a;
+    --text-principal: #f8fafc;
+    --text-secundario: #38bdf8;
+    --color-primario: #38bdf8;
+    --color-primario-hover: #7dd3fc;
+    --border-color: rgba(56, 189, 248, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.45);
+    --bg-input: #020617;
+    --bg-navbar: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    --text-navbar: #f8fafc;
+    --color-ingreso: #34d399;
+    --color-gasto: #f87171;
+    --color-saldo-azul: #38bdf8;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 6. Negro Premium (OLED absoluto) */
+body.tema-negro-premium {
+    --bg-principal: #000000;
+    --bg-tarjeta: #0c0c0c;
+    --text-principal: #ffffff;
+    --text-secundario: #a3a3a3;
+    --color-primario: #f5f5f5;
+    --color-primario-hover: #e5e5e5;
+    --border-color: rgba(255, 255, 255, 0.06);
+    --shadow-tarjeta: 0 16px 40px rgba(255, 255, 255, 0.01);
+    --bg-input: #000000;
+    --bg-navbar: linear-gradient(135deg, #121212 0%, #0c0c0c 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #34d399;
+    --color-gasto: #f87171;
+    --color-saldo-azul: #d1d5db;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 7. Verde Oscuro */
+body.tema-verde-oscuro {
+    --bg-principal: #022c22;
+    --bg-tarjeta: #064e3b;
+    --text-principal: #f0fdf4;
+    --text-secundario: #a7f3d0;
+    --color-primario: #10b981;
+    --color-primario-hover: #34d399;
+    --border-color: rgba(167, 243, 208, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.4);
+    --bg-input: #022c22;
+    --bg-navbar: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+    --text-navbar: #f0fdf4;
+    --color-ingreso: #a7f3d0;
+    --color-gasto: #fca5a5;
+    --color-saldo-azul: #34d399;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 8. Violeta Oscuro */
+body.tema-violeta-oscuro {
+    --bg-principal: #1e1b4b;
+    --bg-tarjeta: #312e81;
+    --text-principal: #faf5ff;
+    --text-secundario: #c084fc;
+    --color-primario: #a78bfa;
+    --color-primario-hover: #c084fc;
+    --border-color: rgba(192, 132, 252, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.4);
+    --bg-input: #1e1b4b;
+    --bg-navbar: linear-gradient(135deg, #4c1d95 0%, #1e1b4b 100%);
+    --text-navbar: #faf5ff;
+    --color-ingreso: #34d399;
+    --color-gasto: #fca5a5;
+    --color-saldo-azul: #a78bfa;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 9. Borgoña (Vino Intenso) */
+body.tema-borgona {
+    --bg-principal: #18080a;
+    --bg-tarjeta: #2d0f12;
+    --text-principal: #ffe4e6;
+    --text-secundario: #fda4af;
+    --color-primario: #fb7185;
+    --color-primario-hover: #f43f5e;
+    --border-color: rgba(253, 164, 175, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.4);
+    --bg-input: #18080a;
+    --bg-navbar: linear-gradient(135deg, #881337 0%, #2d0f12 100%);
+    --text-navbar: #ffe4e6;
+    --color-ingreso: #34d399;
+    --color-gasto: #fda4af;
+    --color-saldo-azul: #fb7185;
+    --color-alerta-naranja: #fb923c;
+}
+
+/* 10. Grafito (Carbón Mate) */
+body.tema-grafito {
+    --bg-principal: #111827;
+    --bg-tarjeta: #1f2937;
+    --text-principal: #f9fafb;
+    --text-secundario: #9ca3af;
+    --color-primario: #d1d5db;
+    --color-primario-hover: #ffffff;
+    --border-color: rgba(156, 163, 175, 0.08);
+    --shadow-tarjeta: 0 16px 40px rgba(0, 0, 0, 0.35);
+    --bg-input: #111827;
+    --bg-navbar: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    --text-navbar: #f9fafb;
+    --color-ingreso: #34d399;
+    --color-gasto: #f87171;
+    --color-saldo-azul: #9ca3af;
+    --color-alerta-naranja: #fb923c;
+}
+
+
+/* --- TEMAS CLAROS --- */
+
+/* 11. Pearl White (Luminoso Perlado) */
+body.tema-pearl-white {
+    --bg-principal: #f4f6f9;
+    --bg-tarjeta: rgba(255, 255, 255, 0.85);
+    --text-principal: #334155;
+    --text-secundario: #64748b;
+    --color-primario: #64748b;
+    --color-primario-hover: #475569;
+    --border-color: rgba(226, 232, 240, 0.6);
+    --shadow-tarjeta: 0 16px 36px rgba(51, 65, 85, 0.04);
+    --bg-input: #ffffff;
+    --bg-navbar: linear-gradient(135deg, #ffffff 0%, #f4f6f9 100%);
+    --text-navbar: #334155;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #64748b;
+    --color-alerta-naranja: #f59e0b;
+}
+
+/* 12. Champagne (Cálido y Orgánico) */
+body.tema-champagne {
+    --bg-principal: #faf7f2;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #4a3e3d;
+    --text-secundario: #a38068;
+    --color-primario: #c5a880;
+    --color-primario-hover: #b3956e;
+    --border-color: rgba(243, 237, 226, 0.6);
+    --shadow-tarjeta: 0 16px 36px rgba(180, 83, 9, 0.03);
+    --bg-input: #ffffff;
+    --bg-navbar: linear-gradient(135deg, #f5f0e6 0%, #faf8f5 100%);
+    --text-navbar: #4a3e3d;
+    --color-ingreso: #10b981;
+    --color-gasto: #b45309;
+    --color-saldo-azul: #c5a880;
+    --color-alerta-naranja: #ea580c;
+}
+
+/* 13. Mauve (Violeta Muted Suave) */
+body.tema-mauve {
+    --bg-principal: #f8f6f9;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #3d3142;
+    --text-secundario: #9b72aa;
+    --color-primario: #d3b4e3;
+    --color-primario-hover: #c19cd2;
+    --border-color: rgba(237, 233, 254, 0.6);
+    --shadow-tarjeta: 0 16px 36px rgba(124, 58, 237, 0.03);
+    --bg-input: #ffffff;
+    --bg-navbar: linear-gradient(135deg, #eeeaf2 0%, #f4f2f6 100%);
+    --text-navbar: #3d3142;
+    --color-ingreso: #10b981;
+    --color-gasto: #b91c1c;
+    --color-saldo-azul: #9b72aa;
+    --color-alerta-naranja: #ea580c;
+}
+
+/* 14. Claro Estándar */
+body.tema-claro {
+    --bg-principal: #f3f4f6;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #1e293b;
+    --text-secundario: #64748b;
+    --color-primario: #1e3c72;
+    --color-primario-hover: #2a5298;
+    --border-color: rgba(226, 232, 240, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(15, 23, 42, 0.04);
+    --bg-input: #f8fafc;
+    --bg-navbar: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #2563eb;
+    --color-alerta-naranja: #f59e0b;
+}
+
+/* 15. Azul Clásico */
+body.tema-azul-clasico {
+    --bg-principal: #eff6ff;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #1e3a8a;
+    --text-secundario: #475569;
+    --color-primario: #2563eb;
+    --color-primario-hover: #1d4ed8;
+    --border-color: rgba(219, 234, 254, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(37, 99, 235, 0.04);
+    --bg-input: #f8fafc;
+    --bg-navbar: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #2563eb;
+    --color-alerta-naranja: #f59e0b;
+}
+
+/* 16. Verde Natural */
+body.tema-verde-natural {
+    --bg-principal: #f0fdf4;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #064e3b;
+    --text-secundario: #374151;
+    --color-primario: #10b981;
+    --color-primario-hover: #059669;
+    --border-color: rgba(209, 250, 229, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(16, 185, 129, 0.04);
+    --bg-input: #f9fbf9;
+    --bg-navbar: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #047857;
+    --color-alerta-naranja: #f59e0b;
+}
+
+/* 17. Violeta Elegante */
+body.tema-violeta-elegante {
+    --bg-principal: #faf5ff;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #4c1d95;
+    --text-secundario: #374151;
+    --color-primario: #8b5cf6;
+    --color-primario-hover: #6d28d9;
+    --border-color: rgba(243, 232, 255, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(139, 92, 246, 0.04);
+    --bg-input: #fcfaff;
+    --bg-navbar: linear-gradient(135deg, #5b21b6 0%, #8b5cf6 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #8b5cf6;
+    --color-alerta-naranja: #f59e0b;
+}
+
+/* 18. Rosa Suave */
+body.tema-rosa-suave {
+    --bg-principal: #fff1f2;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #881337;
+    --text-secundario: #4b5563;
+    --color-primario: #db2777;
+    --color-primario-hover: #c2185b;
+    --border-color: rgba(255, 228, 230, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(225, 29, 72, 0.04);
+    --bg-input: #fffbfb;
+    --bg-navbar: linear-gradient(135deg, #db2777 0%, #f43f5e 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #db2777;
+    --color-saldo-azul: #f43f5e;
+    --color-alerta-naranja: #ea580c;
+}
+
+/* 19. Naranja Cálido */
+body.tema-naranja-calido {
+    --bg-principal: #fff7ed;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #7c2d12;
+    --text-secundario: #4b5563;
+    --color-primario: #ea580c;
+    --color-primario-hover: #d97706;
+    --border-color: rgba(255, 237, 213, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(234, 88, 12, 0.04);
+    --bg-input: #fffbf7;
+    --bg-navbar: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #ea580c;
+    --color-alerta-naranja: #d97706;
+}
+
+/* 20. Gris Moderno */
+body.tema-gris-moderno {
+    --bg-principal: #f9fafb;
+    --bg-tarjeta: #ffffff;
+    --text-principal: #111827;
+    --text-secundario: #4b5563;
+    --color-primario: #4b5563;
+    --color-primario-hover: #374151;
+    --border-color: rgba(229, 231, 235, 0.8);
+    --shadow-tarjeta: 0 16px 36px rgba(55, 65, 81, 0.03);
+    --bg-input: #f9fafb;
+    --bg-navbar: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+    --text-navbar: #ffffff;
+    --color-ingreso: #10b981;
+    --color-gasto: #ef4444;
+    --color-saldo-azul: #4b5563;
+    --color-alerta-naranja: #f59e0b;
+}
+
+/* ==========================================
+   ESTILOS GENERALES (TIPOGRAFÍA REFINADA)
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 0.02em;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+    font-weight: 300;
+    background-color: var(--bg-principal);
+    color: var(--text-principal);
+    margin: 0;
+    padding: 0 0 50px 0;
+    min-height: 100vh;
+}
+
+/* Títulos y Headers Finos */
+h1, h2, h3, label, th, strong, select, input, button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400; /* Reducir grosor general */
+    letter-spacing: 0.02em;
+}
+
+h1, strong {
+    font-weight: 500;
+}
+
+/* ==========================================
+   NAVBAR COMPACTA SUPERIOR
+   ========================================== */
+
+.navbar-compacta {
+    background: var(--bg-navbar);
+    color: var(--text-navbar);
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-izquierda, .navbar-derecha {
+    flex: 1;
+}
+
+.navbar-centro {
+    flex: 2;
+    text-align: center;
+}
+
+.navbar-centro h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+.navbar-centro p {
+    margin: 3px 0 0 0;
+    font-size: 0.72rem;
+    font-weight: 300;
+    opacity: 0.7;
+    letter-spacing: 0.3px;
+}
+
+.selector-tema-grupo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.selector-tema-grupo label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.selector-tema-grupo select {
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--text-principal);
+    background-color: var(--bg-input);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.selector-tema-grupo select:hover {
+    border-color: var(--color-primario);
+}
+
+.navbar-derecha {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.indicador-mes-global {
+    font-size: 0.78rem;
+    color: var(--text-secundario);
+}
+
+.indicador-mes-global strong {
+    background-color: rgba(128, 128, 128, 0.06);
+    color: var(--text-principal);
+    border: 1px solid rgba(128, 128, 128, 0.08);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .navbar-compacta {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+    .navbar-izquierda, .navbar-derecha, .navbar-centro {
+        flex: none;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Contenedor Principal */
+main {
+    width: 94%;
+    max-width: 1200px;
+    margin: 24px auto 0 auto; /* Más aire superior */
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Más aire vertical */
+}
+
+/* ==========================================
+   BARRA DE PRESUPUESTO HORIZONTAL (REFINADA)
+   ========================================== */
+
+.barra-presupuesto-horizontal {
+    background: linear-gradient(135deg, rgba(128, 128, 128, 0.02) 0%, var(--bg-tarjeta) 100%);
+    border: 1px solid rgba(128, 128, 128, 0.06);
+    border-left: 4px solid var(--color-primario); /* Indicador elegante de presupuesto */
+    border-radius: 30px; /* Formato cápsula suave */
+    padding: 14px 32px; /* Más aire interior */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 20px 48px -15px rgba(0, 0, 0, 0.04), var(--shadow-tarjeta);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.presupuesto-visual {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.presupuesto-etiqueta {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-secundario);
+    letter-spacing: 0.5px;
+}
+
+.presupuesto-monto {
+    font-size: 2.1rem; /* Más grande y elegante */
+    font-weight: 300; /* Peso fino premium */
+    color: var(--text-principal);
+    letter-spacing: -0.02em;
+}
+
+.presupuesto-ajuste {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.presupuesto-ajuste label {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-secundario);
+}
+
+.presupuesto-ajuste input {
+    padding: 8px 14px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    font-size: 0.85rem;
+    font-weight: 400;
+    background-color: rgba(128, 128, 128, 0.04);
+    color: var(--text-principal);
+    width: 110px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.presupuesto-ajuste input:focus {
+    border-color: var(--color-primario);
+    background-color: var(--bg-tarjeta);
+}
+
+@media (max-width: 600px) {
+    .barra-presupuesto-horizontal {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+}
+
+/* ==========================================
+   DASHBOARD DE 6 TARJETAS (DELICADO)
+   ========================================== */
+
+.resumen-grilla {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px; /* Más aire */
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .resumen-grilla {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .resumen-grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .resumen-grilla {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tarjeta-resumen {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid rgba(128, 128, 128, 0.05);
+    border-radius: 20px; /* Redondeado más suave */
+    padding: 12px 14px;
+    text-align: center;
+    box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.04), var(--shadow-tarjeta);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-left: 3px solid transparent;
+}
+
+.tarjeta-resumen:hover {
+    transform: translateY(-2px);
+}
+
+.tarjeta-resumen h3 {
+    margin: 0 0 4px 0;
+    font-size: 0.72rem;
+    color: var(--text-secundario);
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+
+.tarjeta-resumen p {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 400; /* Textos de números más finos */
+    color: var(--text-principal);
+}
+
+/* Acentos laterales muy finos */
+.tarjeta-ingresos-diarios,
+.tarjeta-ingresos-semanales,
+.tarjeta-ingresos-mensuales {
+    border-left-color: var(--color-ingreso);
+}
+.tarjeta-saldo {
+    border-left-color: var(--color-saldo-azul);
+}
+.tarjeta-gastos {
+    border-left-color: var(--color-gasto);
+}
+.tarjeta-disponible {
+    border-left-color: var(--color-ingreso);
+}
+
+/* --- JERARQUÍA VISUAL (DASHBOARD) --- */
+.tarjeta-saldo {
+    border: 1px solid var(--color-saldo-azul) !important;
+    border-left: 4px solid var(--color-saldo-azul) !important;
+    background: linear-gradient(135deg, var(--bg-tarjeta) 0%, rgba(128, 128, 128, 0.02) 100%);
+    box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.04), var(--shadow-tarjeta) !important;
+}
+
+.tarjeta-disponible {
+    border: 1px solid var(--color-ingreso) !important;
+    border-left: 4px solid var(--color-ingreso) !important;
+    background: linear-gradient(135deg, var(--bg-tarjeta) 0%, rgba(128, 128, 128, 0.02) 100%);
+    box-shadow: 0 20px 40px -10px rgba(16, 185, 129, 0.04), var(--shadow-tarjeta) !important;
+}
+
+.tarjeta-saldo p,
+.tarjeta-disponible p {
+    font-size: 1.35rem; /* Más grande y dominante */
+    font-weight: 500;
+}
+
+/* ==========================================
+   FORMATO DE MONTO (DECIMALES REDUCIDOS)
+   ========================================== */
+
+.decimales {
+    font-size: 0.65em;
+    font-weight: 300;
+    opacity: 0.65;
+    margin-left: 1px;
+}
+
+.texto-verde {
+    color: var(--color-ingreso) !important;
+}
+.texto-rojo {
+    color: var(--color-gasto) !important;
+}
+.texto-naranja {
+    color: var(--color-alerta-naranja) !important;
+}
+
+/* ==========================================
+   LAYOUT PRINCIPAL DE DOS COLUMNAS
+   ========================================== */
+
+.seccion-principal-layout {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    gap: 30px; /* Más aire entre columnas */
+    align-items: start;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .seccion-principal-layout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+.col-izquierda-container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px; /* Más aire vertical en columna izquierda */
+    width: 100%;
+}
+
+.tarjeta-formulario,
+.tarjeta-ajustes,
+.tarjeta-historial {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid rgba(128, 128, 128, 0.05); /* Borde extremadamente sutil */
+    border-radius: 28px; /* Esquinas más suaves */
+    padding: 32px; /* Más espacio interior */
+    box-shadow: 0 24px 60px -15px rgba(0, 0, 0, 0.06), var(--shadow-tarjeta); /* Sombras profundas y difusas */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.tarjeta-formulario h2,
+.tarjeta-ajustes h2,
+.tarjeta-historial h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--text-principal);
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-bottom: none; /* Eliminar borde para ligereza */
+    padding-bottom: 0;
+    letter-spacing: 0.2px;
+    opacity: 0.9;
+}
+
+#formulario-transaccion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.grupo-input label {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--text-secundario);
+    letter-spacing: 0.3px;
+}
+
+.grupo-input input,
+.grupo-input select {
+    padding: 12px 16px;
+    border-radius: 14px; /* Suave */
+    border: 1px solid transparent; /* Sin borde rígido */
+    font-size: 0.85rem;
+    font-weight: 400;
+    background-color: rgba(128, 128, 128, 0.04); /* Fondo translúcido suave */
+    color: var(--text-principal);
+    outline: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.grupo-input input:focus,
+.grupo-input select:focus {
+    border-color: var(--color-primario);
+    background-color: var(--bg-tarjeta);
+    box-shadow: 0 8px 24px -10px var(--color-primario);
+}
+
+/* Botones Formato Píldora Completa */
+.btn {
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.btn-primario {
+    background-color: var(--color-primario);
+    color: var(--bg-principal);
+}
+
+.btn-primario:hover {
+    background-color: var(--color-primario-hover);
+    transform: translateY(-1.5px);
+    box-shadow: 0 8px 20px -6px var(--color-primario);
+}
+
+/* ==========================================
+   TARJETA DE CONFIGURACIÓN (AJUSTES Y CATEGORÍAS)
+   ========================================== */
+
+.ajuste-seccion {
+    margin-bottom: 24px;
+}
+
+.ajuste-seccion:last-child {
+    margin-bottom: 0;
+}
+
+.ajuste-seccion h3 {
+    margin: 0 0 12px 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-secundario);
+    letter-spacing: 0.5px;
+}
+
+/* Grilla de Temas visual */
+.temas-preview-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.temas-subgrupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.temas-subgrupo span {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--text-secundario);
+}
+
+.temas-grilla-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btn-tema-chip {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-tema-chip:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-tema-chip.activo {
+    transform: scale(1.2);
+    border-color: var(--text-principal);
+    box-shadow: 0 0 0 2px var(--bg-tarjeta), 0 0 0 4px var(--color-primario);
+}
+
+/* Paletas diagonales específicas */
+.btn-tema-chip.claro {
+    background: linear-gradient(135deg, #1e3c72 50%, #ffffff 50%);
+}
+.btn-tema-chip.azul-clasico {
+    background: linear-gradient(135deg, #2563eb 50%, #eff6ff 50%);
+}
+.btn-tema-chip.verde-natural {
+    background: linear-gradient(135deg, #10b981 50%, #f0fdf4 50%);
+}
+.btn-tema-chip.violeta-elegante {
+    background: linear-gradient(135deg, #8b5cf6 50%, #faf5ff 50%);
+}
+.btn-tema-chip.rosa-suave {
+    background: linear-gradient(135deg, #db2777 50%, #fff1f2 50%);
+}
+.btn-tema-chip.naranja-calido {
+    background: linear-gradient(135deg, #ea580c 50%, #fff7ed 50%);
+}
+.btn-tema-chip.gris-moderno {
+    background: linear-gradient(135deg, #374151 50%, #f9fafb 50%);
+}
+.btn-tema-chip.pearl-white {
+    background: linear-gradient(135deg, #475569 50%, #ffffff 50%);
+}
+.btn-tema-chip.champagne {
+    background: linear-gradient(135deg, #b45309 50%, #faf8f5 50%);
+}
+.btn-tema-chip.mauve {
+    background: linear-gradient(135deg, #8b5cf6 50%, #f4f2f6 50%);
+}
+
+.btn-tema-chip.ciruela-oscura {
+    background: linear-gradient(135deg, #fda4af 50%, #181022 50%);
+}
+.btn-tema-chip.oscuro {
+    background: linear-gradient(135deg, #3b82f6 50%, #152033 50%);
+}
+.btn-tema-chip.noche-azul {
+    background: linear-gradient(135deg, #38bdf8 50%, #0f172a 50%);
+}
+.btn-tema-chip.negro-premium {
+    background: linear-gradient(135deg, #ffffff 50%, #0c0c0c 50%);
+}
+.btn-tema-chip.verde-oscuro {
+    background: linear-gradient(135deg, #10b981 50%, #064e3b 50%);
+}
+.btn-tema-chip.violeta-oscuro {
+    background: linear-gradient(135deg, #a78bfa 50%, #312e81 50%);
+}
+.btn-tema-chip.borgona {
+    background: linear-gradient(135deg, #fb7185 50%, #2d0f12 50%);
+}
+.btn-tema-chip.grafito {
+    background: linear-gradient(135deg, #d1d5db 50%, #1f2937 50%);
+}
+.btn-tema-chip.midnight-rose {
+    background: linear-gradient(135deg, #fda4af 50%, #12131a 50%);
+}
+.btn-tema-chip.emerald-luxury {
+    background: linear-gradient(135deg, #a7f3d0 50%, #042b20 50%);
+}
+
+/* Gestor de Categorías */
+.crear-categoria-grupo {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.crear-categoria-grupo input {
+    flex: 1;
+    padding: 8px 14px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    font-size: 0.85rem;
+    background-color: rgba(128, 128, 128, 0.04);
+    color: var(--text-principal);
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.crear-categoria-grupo input:focus {
+    border-color: var(--color-primario);
+    background-color: var(--bg-tarjeta);
+}
+
+.btn-agregar-categoria {
+    background-color: var(--color-primario);
+    color: var(--bg-principal);
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
+
+.btn-agregar-categoria:hover {
+    background-color: var(--color-primario-hover);
+    transform: scale(1.08);
+}
+
+.lista-categorias-config {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.05);
+    border-radius: 16px;
+    padding: 6px;
+    background-color: rgba(128, 128, 128, 0.02);
+}
+
+.lista-categorias-config li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: var(--bg-tarjeta);
+    border: 1px solid rgba(128, 128, 128, 0.04);
+    border-radius: 12px;
+}
+
+.lista-categorias-config li span {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--text-principal);
+}
+
+.categoria-acciones {
+    display: flex;
+    gap: 4px;
+}
+
+.btn-cat-editar,
+.btn-cat-eliminar {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-cat-editar:hover {
+    background-color: rgba(128, 128, 128, 0.08);
+}
+
+.btn-cat-eliminar {
+    color: var(--color-gasto);
+}
+
+.btn-cat-eliminar:hover {
+    background-color: rgba(239, 68, 68, 0.06);
+}
+
+/* ==========================================
+   TABLA DE HISTORIAL PREMIUM (V7)
+   ========================================== */
+
+.cabecera-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none; /* Eliminar borde divisor */
+    padding-bottom: 0;
+    margin-bottom: 24px;
+    gap: 15px;
+}
+
+.cabecera-seccion h2 {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.filtro-mes-grupo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filtro-mes-grupo label {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--text-secundario);
+}
+
+.filtro-mes-grupo input {
+    padding: 5px 12px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-principal);
+    background-color: rgba(128, 128, 128, 0.04);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filtro-mes-grupo input:focus {
+    border-color: var(--color-primario);
+    background-color: var(--bg-tarjeta);
+}
+
+.contenedor-tabla {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+th, td {
+    padding: 16px 20px; /* Mayor espacio de aire */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.03); /* Línea divisoria muy sutil */
+    vertical-align: middle;
+}
+
+th {
+    background-color: transparent; /* Fondo transparente */
+    color: var(--text-secundario);
+    font-weight: 400;
+    font-size: 0.76rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.06);
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(128, 128, 128, 0.015); /* Efecto hover muy sutil */
+}
+
+/* Badges */
+.badge {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.badge-ingreso {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #065f46;
+}
+
+.badge-gasto {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #991b1b;
+}
+
+/* Modo oscuro badge colors */
+body.tema-ciruela-oscura .badge-ingreso,
+body.tema-midnight-rose .badge-ingreso,
+body.tema-emerald-luxury .badge-ingreso,
+body.tema-oscuro .badge-ingreso,
+body.tema-noche-azul .badge-ingreso,
+body.tema-negro-premium .badge-ingreso,
+body.tema-verde-oscuro .badge-ingreso,
+body.tema-violeta-oscuro .badge-ingreso,
+body.tema-borgona .badge-ingreso,
+body.tema-grafito .badge-ingreso {
+    background-color: rgba(16, 185, 129, 0.12);
+    color: #34d399;
+}
+
+body.tema-ciruela-oscura .badge-gasto,
+body.tema-midnight-rose .badge-gasto,
+body.tema-emerald-luxury .badge-gasto,
+body.tema-oscuro .badge-gasto,
+body.tema-noche-azul .badge-gasto,
+body.tema-negro-premium .badge-gasto,
+body.tema-verde-oscuro .badge-gasto,
+body.tema-violeta-oscuro .badge-gasto,
+body.tema-borgona .badge-gasto,
+body.tema-grafito .badge-gasto {
+    background-color: rgba(239, 68, 68, 0.12);
+    color: #fda4af;
+}
+
+/* Botón eliminar */
+.btn-eliminar {
+    background-color: transparent;
+    color: var(--color-gasto);
+    border: 1px solid rgba(239, 68, 68, 0.15);
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: var(--color-gasto);
+    color: #ffffff;
+    border-color: var(--color-gasto);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+
+.mensaje-vacio {
+    text-align: center;
+    color: var(--text-secundario);
+    font-style: italic;
+    padding: 20px 0;
+    margin: 0;
+}

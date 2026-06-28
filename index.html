@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Control de Finanzas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tema-ciruela-oscura">
+
+    <!-- Navbar Compacta Superior -->
+    <header class="navbar-compacta">
+        <div class="navbar-izquierda">
+            <div class="selector-tema-grupo">
+                <label for="selector-tema">🎨 Tema:</label>
+                <select id="selector-tema">
+                    <!-- Temas Claros -->
+                    <optgroup label="Temas Claros">
+                        <option value="claro">Claro Estándar</option>
+                        <option value="azul-clasico">Azul Clásico</option>
+                        <option value="verde-natural">Verde Natural</option>
+                        <option value="violeta-elegante">Violeta Elegante</option>
+                        <option value="rosa-suave">Rosa Suave</option>
+                        <option value="naranja-calido">Naranja Cálido</option>
+                        <option value="gris-moderno">Gris Moderno</option>
+                        <option value="pearl-white">Pearl White</option>
+                        <option value="champagne">Champagne</option>
+                        <option value="mauve">Mauve</option>
+                    </optgroup>
+                    <!-- Temas Oscuros -->
+                    <optgroup label="Temas Oscuros">
+                        <option value="ciruela-oscura">Ciruela Oscura (Predeterminado)</option>
+                        <option value="oscuro">Oscuro Estándar</option>
+                        <option value="noche-azul">Noche Azul</option>
+                        <option value="negro-premium">Negro Premium</option>
+                        <option value="verde-oscuro">Verde Oscuro</option>
+                        <option value="violeta-oscuro">Violeta Oscuro</option>
+                        <option value="borgona">Borgoña</option>
+                        <option value="grafito">Grafito</option>
+                        <option value="midnight-rose">Midnight Rose</option>
+                        <option value="emerald-luxury">Emerald Luxury</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+        <div class="navbar-centro">
+            <h1>Mi Control de Finanzas</h1>
+            <p>Gestión simple, clara y profesional de tu dinero</p>
+        </div>
+        <div class="navbar-derecha">
+            <div class="indicador-mes-global">
+                📅 Período: <strong id="indicador-mes-texto">-</strong>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Barra de Presupuesto Mensual -->
+        <section class="barra-presupuesto-horizontal">
+            <div class="presupuesto-visual">
+                <span class="presupuesto-etiqueta">Presupuesto Mensual:</span>
+                <strong class="presupuesto-monto" id="pantalla-presupuesto-grande">$0<span class="decimales">.00</span></strong>
+            </div>
+            <div class="presupuesto-ajuste">
+                <label for="presupuesto-input">Ajustar ($):</label>
+                <input type="number" id="presupuesto-input" placeholder="Ej: 50000" min="0" step="any">
+            </div>
+        </section>
+
+        <!-- Dashboard de Métricas (6 Tarjetas) -->
+        <section class="resumen-grilla">
+            <!-- Tarjeta Ingresos Diarios -->
+            <div class="tarjeta-resumen tarjeta-ingresos-diarios">
+                <h3>Ingresos Diarios</h3>
+                <p id="ingresos-diarios-pantalla" class="texto-verde">$0.00</p>
+            </div>
+            <!-- Tarjeta Ingresos Semanales -->
+            <div class="tarjeta-resumen tarjeta-ingresos-semanales">
+                <h3>Ingresos Semanales</h3>
+                <p id="ingresos-semanales-pantalla" class="texto-verde">$0.00</p>
+            </div>
+            <!-- Tarjeta Ingresos Mensuales -->
+            <div class="tarjeta-resumen tarjeta-ingresos-mensuales">
+                <h3>Ingresos Mensuales</h3>
+                <p id="ingresos-mensuales-pantalla" class="texto-verde">$0.00</p>
+            </div>
+            <!-- Tarjeta Saldo Actual -->
+            <div class="tarjeta-resumen tarjeta-saldo">
+                <h3>Saldo Actual</h3>
+                <p id="saldo-pantalla">$0.00</p>
+            </div>
+            <!-- Tarjeta Total Gastos -->
+            <div class="tarjeta-resumen tarjeta-gastos">
+                <h3>Total Gastos</h3>
+                <p id="gastos-pantalla" class="texto-rojo">$0.00</p>
+            </div>
+            <!-- Tarjeta Disponible para Gastar -->
+            <div class="tarjeta-resumen tarjeta-disponible">
+                <h3>Disponible para Gastar</h3>
+                <p id="disponible-pantalla" class="texto-verde">$0.00</p>
+            </div>
+        </section>
+
+        <!-- Layout Principal en Columnas -->
+        <div class="seccion-principal-layout">
+            <!-- Columna Izquierda: Registro y Preferencias -->
+            <div class="col-izquierda-container">
+                <!-- Tarjeta de Registro de Movimiento -->
+                <section class="tarjeta-formulario">
+                    <h2>Registrar Movimiento</h2>
+                    <form id="formulario-transaccion">
+                        <div class="grupo-input">
+                            <label for="tipo-select">Tipo de Movimiento:</label>
+                            <select id="tipo-select" required>
+                                <option value="ingreso">Ingreso</option>
+                                <option value="gasto">Gasto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grupo-input">
+                            <label for="categoria-select">Categoría:</label>
+                            <select id="categoria-select" required>
+                                <!-- Se poblará dinámicamente -->
+                            </select>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="descripcion-input">Descripción (Opcional):</label>
+                            <input type="text" id="descripcion-input" placeholder="Ej: Supermercado, Sueldo, Cine">
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="monto-input">Monto ($):</label>
+                            <input type="number" id="monto-input" placeholder="Ej: 1500" min="0.01" step="any" required>
+                        </div>
+
+                        <button type="submit" id="btn-registrar" class="btn btn-primario">Registrar Movimiento</button>
+                    </form>
+                </section>
+
+                <!-- Tarjeta de Ajustes y Personalización -->
+                <section class="tarjeta-ajustes">
+                    <h2>Ajustes y Categorías</h2>
+                    
+                    <!-- Previsualización Visual de Temas -->
+                    <div class="ajuste-seccion">
+                        <h3>Paletas de Colores</h3>
+                        <div class="temas-preview-contenedor">
+                            <div class="temas-subgrupo">
+                                <span>Claros:</span>
+                                <div class="temas-grilla-preview">
+                                    <button type="button" class="btn-tema-chip claro" data-tema="claro" title="Claro Estándar"></button>
+                                    <button type="button" class="btn-tema-chip azul-clasico" data-tema="azul-clasico" title="Azul Clásico"></button>
+                                    <button type="button" class="btn-tema-chip verde-natural" data-tema="verde-natural" title="Verde Natural"></button>
+                                    <button type="button" class="btn-tema-chip violeta-elegante" data-tema="violeta-elegante" title="Violeta Elegante"></button>
+                                    <button type="button" class="btn-tema-chip rosa-suave" data-tema="rosa-suave" title="Rosa Suave"></button>
+                                    <button type="button" class="btn-tema-chip naranja-calido" data-tema="naranja-calido" title="Naranja Cálido"></button>
+                                    <button type="button" class="btn-tema-chip gris-moderno" data-tema="gris-moderno" title="Gris Moderno"></button>
+                                    <button type="button" class="btn-tema-chip pearl-white" data-tema="pearl-white" title="Pearl White"></button>
+                                    <button type="button" class="btn-tema-chip champagne" data-tema="champagne" title="Champagne"></button>
+                                    <button type="button" class="btn-tema-chip mauve" data-tema="mauve" title="Mauve"></button>
+                                </div>
+                            </div>
+                            <div class="temas-subgrupo">
+                                <span>Oscuros (Noche):</span>
+                                <div class="temas-grilla-preview">
+                                    <button type="button" class="btn-tema-chip ciruela-oscura" data-tema="ciruela-oscura" title="Ciruela Oscura (Predeterminado)"></button>
+                                    <button type="button" class="btn-tema-chip oscuro" data-tema="oscuro" title="Oscuro Estándar"></button>
+                                    <button type="button" class="btn-tema-chip noche-azul" data-tema="noche-azul" title="Noche Azul"></button>
+                                    <button type="button" class="btn-tema-chip negro-premium" data-tema="negro-premium" title="Negro Premium"></button>
+                                    <button type="button" class="btn-tema-chip verde-oscuro" data-tema="verde-oscuro" title="Verde Oscuro"></button>
+                                    <button type="button" class="btn-tema-chip violeta-oscuro" data-tema="violeta-oscuro" title="Violeta Oscuro"></button>
+                                    <button type="button" class="btn-tema-chip borgona" data-tema="borgona" title="Borgoña"></button>
+                                    <button type="button" class="btn-tema-chip grafito" data-tema="grafito" title="Grafito"></button>
+                                    <button type="button" class="btn-tema-chip midnight-rose" data-tema="midnight-rose" title="Midnight Rose"></button>
+                                    <button type="button" class="btn-tema-chip emerald-luxury" data-tema="emerald-luxury" title="Emerald Luxury"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gestor de Categorías -->
+                    <div class="ajuste-seccion">
+                        <h3>Categorías</h3>
+                        <div class="crear-categoria-grupo">
+                            <input type="text" id="nueva-categoria-input" placeholder="Nueva categoría..." maxlength="20">
+                            <button type="button" id="btn-agregar-categoria" class="btn-agregar-categoria" title="Agregar Categoría">+</button>
+                        </div>
+                        <ul id="lista-categorias-config" class="lista-categorias-config">
+                            <!-- Se poblará dinámicamente -->
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Columna Derecha: Historial de Movimientos -->
+            <section class="tarjeta-historial col-derecha">
+                <div class="cabecera-seccion">
+                    <h2>Historial de Movimientos</h2>
+                    <div class="filtro-mes-grupo">
+                        <label for="filtro-mes-select"><strong>Ver Mes:</strong></label>
+                        <input type="month" id="filtro-mes-select">
+                    </div>
+                </div>
+                <div class="contenedor-tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Descripción</th>
+                                <th>Categoría</th>
+                                <th>Tipo</th>
+                                <th>Monto</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-movimientos">
+                            <!-- Las filas se insertarán dinámicamente con JavaScript -->
+                        </tbody>
+                    </table>
+                    <p id="mensaje-vacio-tabla" class="mensaje-vacio">Aún no hay movimientos registrados en este período.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
