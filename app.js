@@ -465,3 +465,52 @@ aplicarTema(temaSeleccionado);
 renderizarCategorias();
 actualizarDashboard();
 renderizarTabla();
+
+// Lógica para instalar la aplicación en el celular
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Evita que el navegador muestre el cartel automático
+  e.preventDefault();
+  deferredPrompt = e;
+  
+  // Creamos un botón flotante para instalar (si no tenés uno en tu HTML)
+  if (!document.getElementById('btn-instalar')) {
+    const botonInstalar = document.createElement('button');
+    botonInstalar.id = 'btn-instalar';
+    botonInstalar.innerHTML = '📲 Instalar Aplicación';
+    // Estilo elegante ciruela y rosé gold
+    botonInstalar.style.position = 'fixed';
+    botonInstalar.style.bottom = '20px';
+    botonInstalar.style.right = '20px';
+    botonInstalar.style.backgroundColor = '#4A154B'; // Ciruela
+    botonInstalar.style.color = '#FFF';
+    botonInstalar.style.border = '2px solid #E0A96D'; // Toque rosé gold
+    botonInstalar.style.padding = '12px 20px';
+    botonInstalar.style.borderRadius = '25px';
+    botonInstalar.style.cursor = 'pointer';
+    botonInstalar.style.fontWeight = 'bold';
+    botonInstalar.style.zIndex = '1000';
+    botonInstalar.style.boxShadow = '0px 4px 10px rgba(0,0,0,0.3)';
+    
+    document.body.appendChild(botonInstalar);
+
+    botonInstalar.addEventListener('click', async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+          console.log('¡Milagros instaló la app con éxito!');
+        }
+        deferredPrompt = null;
+        botonInstalar.remove();
+      }
+    });
+  }
+});
+
+window.addEventListener('appinstalled', () => {
+  console.log('App instalada');
+  const btn = document.getElementById('btn-instalar');
+  if (btn) btn.remove();
+});
